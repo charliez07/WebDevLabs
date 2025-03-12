@@ -1,0 +1,58 @@
+* {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    padding: 5px;
+    margin: 5px;
+}
+
+header {
+    color: white;
+}
+
+#webname {
+    background-color: #92ad70;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2b4f60;
+    margin-right: 15px;
+}
+
+table {
+    width: fit-content;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 12px 0;
+    background-color: #4a6fa5;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+form * {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: #92ad70;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #92ad70;
+}
