@@ -56,3 +56,43 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #92ad70;
 }
+
+#funList {
+    display: none;
+}
+
+#showButton {
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 10px 0;
+}
+
+#showButton:hover {
+    background-color: #92ad70;
+}
+
+#readMore, #readLess {
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#readMore:hover, #readLess:hover {
+    background-color: #92ad70;
+}
+
+#formMessage {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}

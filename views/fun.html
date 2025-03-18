@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="../static/script.js" defer></script>
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <h1 id="webname">Charlie Zhang</h1>
         <nav>
@@ -26,7 +26,8 @@
     
     <div class="main">
         <h2>Things I love to do for fun</h2>
-        <ul>
+        <button id="showButton" onclick="showList()">Click to see...</button>
+        <ul id="funList">
             <li>Playing video games</li>
             <li>Exploring new technologies</li>
             <li>Playing Soccer</li>
@@ -35,7 +36,7 @@
     </div>
     
     <footer>
-        <p>&copy; 2025 Charlie Zhang. All rights reserved.</p>
+        <p id="copyYear">© </p>
     </footer>
 </body>
 </html>

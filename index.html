@@ -12,8 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/style.css">
     <script src="./static/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <h1 id="webname">Charlie Zhang</h1>
         <nav>
@@ -27,11 +28,19 @@
     <div class="main">
         <h2 id="greeting">Hi, my name is Charlie</h2>
         <img src="static/profile.jpg" alt="Profile picture of Charlie Zhang" style="width:150px; height:auto;">
-        <p id="intro">Welcome to my personal website! Here, you'll find information about my background, projects, and interests.</p>
+        <p id="shortBio">I'm a student at Carnegie Mellon University studying Information Systems.</p>
+        <p id="fullBio" style="display: none;">
+            I have a strong passion for technology, business, and innovation. I enjoy exploring the intersection 
+            between software engineering and data science. My experience includes working on projects related 
+            to web development, databases, and data analysis.
+        </p>
+        <button id="readMore">Read More</button>
+        <button id="readLess" style="display: none;">Read Less</button>
+
     </div>
     
     <footer>
-        <p>&copy; 2025 Charlie Zhang. All rights reserved.</p>
+        <p id="copyYear">© </p>
     </footer>
 </body>
 </html>
