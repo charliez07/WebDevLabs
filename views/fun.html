@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../static/style.css">
     <script src="../static/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body onload="addYear()">
     <header>
@@ -24,15 +25,37 @@
         </nav>
     </header>
     
-    <div class="main">
-        <h2>Things I love to do for fun</h2>
-        <button id="showButton" onclick="showList()">Click to see...</button>
-        <ul id="funList">
-            <li>Playing video games</li>
-            <li>Exploring new technologies</li>
-            <li>Playing Soccer</li>
-            <li>Trying out new restaurants and food</li>
-        </ul>
+    <div class="mainLayout">
+        <div id="item1">
+            <h2>Things I love to do for fun</h2>
+            <!-- <button id="showButton" onclick="showList()">Click to see...</button> -->
+            <ul id="funList">
+                <li>Playing video games</li>
+                <li>Exploring new technologies</li>
+                <li>Playing Soccer</li>
+                <li>Trying out new restaurants and food</li>
+            </ul>
+        </div>
+        <div id="item2">
+            <img src="../static/funphoto.jpg" class="funIMG" style="width:500px; height:auto;">
+        </div>
+        <div id="item3">
+            <iframe 
+                class="funVideo"
+                width="600" 
+                height="400" 
+                src="https://www.youtube.com/embed/qM43gnigKgQ" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div id="item4">
+            <div class="container">
+                <h2>Need Some Advice?</h2>
+                <p id="adviceText">Click the button to get a random piece of advice!</p>
+                <button onclick="getAdvice()" class="adviceButton">Get Advice</button>
+            </div>
+        </div>
     </div>
     
     <footer>

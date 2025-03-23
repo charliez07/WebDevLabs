@@ -57,9 +57,9 @@ input[type="submit"]:hover {
     background-color: #92ad70;
 }
 
-#funList {
+/* #funList {
     display: none;
-}
+} */
 
 #showButton {
     background-color: #4a6fa5;
@@ -96,3 +96,54 @@ input[type="submit"]:hover {
     margin-top: 10px;
     text-align: center;
 }
+
+.funIMG {
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+}
+
+.funVideo {
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.container {
+    border-radius: 10%;
+    display: inline-block;
+    padding: 30px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.adviceButton {
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.adviceButton:hover {
+    background-color: #92ad70;
+}
+
+.mainLayout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+#item1, #item2, #item3, #item4 {
+    flex: 1 1 45%;
+    max-width: 48%;
+    min-width: 300px;
+}
+

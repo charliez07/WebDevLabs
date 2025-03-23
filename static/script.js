@@ -77,15 +77,15 @@ function addYear() {
     }
 }
 
-function showList() {
-    let list = document.getElementById("funList");
-    let button = document.getElementById("showButton");
+// function showList() {
+//     let list = document.getElementById("funList");
+//     let button = document.getElementById("showButton");
 
-    if (list && button) {
-        list.style.display = "block"; 
-        button.style.display = "none"; 
-    }
-}
+//     if (list && button) {
+//         list.style.display = "block"; 
+//         button.style.display = "none"; 
+//     }
+// }
 
 $(document).ready(function () {
     $("#readMore").click(function () {
@@ -118,4 +118,13 @@ function validateForm() {
     } else {
         validationMessage.innerHTML = "";
     }
+}
+
+function getAdvice() {
+    fetch('https://api.adviceslip.com/advice')
+        .then(response => response.json())
+        .then(data => {
+            const advice = data.slip.advice;
+            document.getElementById("adviceText").innerText = advice;
+        })
 }
